@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #add8e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 1100px;
+  background-color: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  box-shadow: 0 35px 50px rgba(0, 0, 0, 0.2);
+}
+
+.container .left-side {
+  position: relative;
+  background-color: #003147;
+  padding: 40px;
+}
+
+/* Left Side */
+.profile-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-text .img-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-text .img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-text h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+
+.profile-text h2 span {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.contact-info {
+  padding-top: 40px;
+}
+
+.contact-info .title {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.contact-info ul {
+  position: relative;
+}
+
+.contact-info ul li {
+  position: relative;
+  margin: 10px 0;
+}
+
+.contact-info ul li .icon {
+  display: inline-block;
+  color: #03a9f4;
+  width: 30px;
+  font-size: 20px;
+}
+
+.contact-info ul li .text {
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact-info ul li .text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info.education li {
+  margin-bottom: 15px;
+}
+
+.contact-info.education h5 {
+  color: #03a9f4;
+}
+
+.contact-info.education h4:nth-child(2) {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.contact-info.education h4 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.contact-info.languages li,
+.contact-info.skills li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.percent {
+  position: relative;
+  width: 65%;
+  height: 6px;
+  background-color: #081921;
+  margin-top: 5px;
+}
+
+.percent div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #03a9f4;
+}
+
+/* Right Side */
+.container .right-side {
+  position: relative;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.about {
+  padding: 20px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.about:first-child {
+  padding-top: 0;
+}
+
+.about:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.about .title {
+  color: #003147;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about.education .year-and-course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.about.education .year-and-course .course-studied-at {
+  font-weight: 800;
+}
+
+.about.education .year-and-course .year {
+  font-weight: 400;
+}
+
+.box {
+  display: flex;
+  margin: 20px 0;
+}
+
+.box .year-done-in {
+  min-width: 150px;
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+
+.box .project-title {
+  color: #118cc5;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.about.achievements li {
+  list-style: square;
+  margin: 10px 0 10px 10px;
+}
+
+.about.interests ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px;
+}
+
+.about.interests ul li {
+  display: flex;
+  align-items: center;
+}
+
+.about.interests ul li .icon {
+  color: #03a9f4;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.about.name-date {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #1e1e1e;
+}
+
+/* Styling Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* border: 2px solid #185f80; */
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1a91c9;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00aeff;
+}
+
+/* Making the page Responsive */
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about.interests ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about .box {
+    flex-direction: column;
+  }
+
+  .about .box .year-done-in {
+    margin-bottom: 10px;
+  }
+
+  .about.interests ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    justify-content: unset;
+  }
+  .container {
+    margin: 0;
+  }
+}
