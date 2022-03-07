@@ -309,7 +309,8 @@ li {
 }
 
 @media (max-width: 360px) {
-  .left-side, .right-side {
+  .container .left-side,
+  .container .right-side {
     padding: 20px;
   }
 }
