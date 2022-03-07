@@ -261,7 +261,6 @@ li {
 
 ::-webkit-scrollbar-track {
   background-color: transparent;
-  /* border: 2px solid #185f80; */
   border-radius: 15px;
 }
 
@@ -306,5 +305,11 @@ li {
   }
   .container {
     margin: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .left-side, .right-side {
+    padding: 20px;
   }
 }
