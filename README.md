@@ -1,1 +1,0 @@
-My Resume Website: <a href="https://resume-rohith.netlify.app/">https://resume-rohith.netlify.app/</a>
