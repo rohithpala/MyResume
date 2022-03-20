@@ -79,7 +79,12 @@ li {
 }
 
 .contact-info {
-  padding-top: 40px;
+  padding: 27px 0;
+  border-bottom :1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-info:last-child {
+  border-bottom: 0;
 }
 
 .contact-info .title {
@@ -108,6 +113,7 @@ li {
 }
 
 .contact-info ul li .text {
+  width: max-content;
   color: #fff;
   font-weight: 300;
 }
@@ -141,9 +147,29 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
-.percent {
+.skill-category {
+  color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 200, 0.1);
+}
+
+.skill-category:first-child {
+  padding-top: 0;
+}
+
+.skill-category:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.skill {
+  text-decoration: underline;
+}
+
+.percentage-container {
   position: relative;
   width: 65%;
   height: 6px;
@@ -151,7 +177,14 @@ li {
   margin-top: 5px;
 }
 
-.percent div {
+.percentage {
+  position: absolute;
+  top: -27px;
+  right: 0;
+  color: #fff;
+}
+
+.percentage-container div {
   position: absolute;
   left: 0;
   top: 0;
@@ -254,29 +287,9 @@ li {
   color: #1e1e1e;
 }
 
-/* Styling Scrollbar */
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-  border-radius: 15px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #1a91c9;
-  border-radius: 15px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #00aeff;
-}
-
 /* Making the page Responsive */
 @media (max-width: 1000px) {
   .container {
-    margin: 10px;
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -286,6 +299,10 @@ li {
 }
 
 @media (max-width: 600px) {
+  .container {
+    margin: 10px;
+  }
+
   .about .box {
     flex-direction: column;
   }
@@ -295,20 +312,15 @@ li {
   }
 
   .about.interests ul {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (max-width: 420px) {
-  body {
-    justify-content: unset;
-  }
-  .container {
-    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 360px) {
+  .container {
+    margin: 0;
+  }
+
   .container .left-side,
   .container .right-side {
     padding: 20px;
