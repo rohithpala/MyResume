@@ -80,7 +80,7 @@ li {
 
 .contact-info {
   padding: 27px 0;
-  border-bottom :1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-info:last-child {
@@ -262,18 +262,21 @@ li {
   margin: 10px 0 10px 10px;
 }
 
-.about.interests ul {
+.about.interests ul,
+.about.strengths ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 10px;
 }
 
-.about.interests ul li {
+.about.interests ul li,
+.about.strengths ul li {
   display: flex;
   align-items: center;
 }
 
-.about.interests ul li .icon {
+.about.interests ul li .icon,
+.about.strengths ul li .icon {
   color: #03a9f4;
   font-size: 18px;
   margin-right: 10px;
@@ -293,7 +296,8 @@ li {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .about.interests ul {
+  .about.interests ul,
+  .about.strengths ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -302,7 +306,6 @@ li {
   .container {
     margin: 10px;
   }
-
   .about .box {
     flex-direction: column;
   }
@@ -311,8 +314,9 @@ li {
     margin-bottom: 10px;
   }
 
-  .about.interests ul {
-    grid-template-columns: repeat(2, 1fr);
+  .about.interests ul,
+  .about.strengths ul {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
